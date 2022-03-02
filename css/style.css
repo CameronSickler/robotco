@@ -10,7 +10,14 @@ html, body {
     height: 100%;
 }
 
+body {
+    padding-bottom: 100px;
+}
+
 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #47a0ce;
     text-align: center;
 
@@ -22,6 +29,8 @@ nav {
 }
 
 nav a {
+    color: black;
+    font-weight: bold;
     font-size: 22px;
     margin: 0 20px;
 }
@@ -46,6 +55,11 @@ main {
     margin-bottom: 0;
 }
 
+.bg-primary {
+    background-color: #47a0ce;
+    color: black;
+}
+
 .bg-dark {
     background-color: black;
     color: #47a0ce;
@@ -64,8 +78,49 @@ main {
     font-size: 42px;
 }
 
+#hero a {
+    background: white;
+    margin: 10px;
+    font-size: 22px;
+    text-decoration: none;
+    padding: 15px;
+    color: black;
+  }
+
 .callout {
     border: 5px dotted #47a0ce;
     text-align: center;
     margin: 0px 30px;
+    padding: 30px 15px;
 }
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .gallery-item {
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    width: 240px;
+    height: 240px;
+  }
+  
+  .social-icons a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+  }
+  
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
